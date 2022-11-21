@@ -1,38 +1,44 @@
 export function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.css file.
-   */
   return (
-    <div className="bg-gray-50">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block">Ready to dive in?</span>
-          <span className="block text-indigo-600">
-            Start your free trial today.
-          </span>
-        </h2>
-        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-          <div className="inline-flex rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-            >
-              Get started
-            </a>
-          </div>
-          <div className="ml-3 inline-flex rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
-            >
-              Learn more
-            </a>
-          </div>
+    <>
+      {/* Navigation Bar */}
+      <div className="top-0 sticky w-full bg-black ">
+        <nav className="md:container flex justify-between mx-auto">
+          <img className="h-12 my-2" src="./dacaLogo.png" alt="" />
+          <ul className="flex flex-row items-center gap-4">
+            <li className="text-white uppercase font-light text-sm hover:text-orange-400">
+              Home
+            </li>
+            <li className="text-white uppercase font-light text-sm hover:text-orange-400">
+              About
+            </li>
+            <li className="text-white uppercase font-light text-sm hover:text-orange-400">
+              Tours
+            </li>
+            <li className="text-white uppercase font-light text-sm hover:text-orange-400">
+              Videos
+            </li>
+            <li className="text-white uppercase font-light text-sm hover:text-orange-400">
+              Gallery
+            </li>
+            <li className="text-white uppercase font-light text-sm hover:text-orange-400">
+              Contact
+            </li>
+          </ul>
+        </nav>
+      </div>
+      {/* Video Intro & CTA */}
+      <div className="h-screen bg-cover bg-center bg-[url('/img/fire-bikes-ute.jpeg')] ">
+        <div className="h-screen flex items-center justify-center flex-col bg-black/50">
+          <h2 className="text-white font-sans2 text-5xl font-bold ">
+            RAW ADVENTURE
+          </h2>
+          <p className="font-sans3 text-orange-100 mt-3 text-3xl font-extralight text-center lg:w-1/3">
+            AUSTRALIA’S MOST REMOTE EPIC OFF-ROAD TOURS.
+          </p>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
