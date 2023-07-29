@@ -1,10 +1,18 @@
+import Image from 'next/image';
+
 export function Index() {
   return (
     <>
       {/* Navigation Bar */}
       <div className="top-0 sticky w-full bg-black ">
         <nav className="md:container flex justify-between mx-auto">
-          <img className="h-12 my-2" src="./dacaLogo.png" alt="" />
+          <Image
+            width="165px"
+            height="48"
+            className="my-2"
+            src="/dacaLogo.png"
+            alt=""
+          />
           <ul className="flex flex-row items-center gap-4">
             <li className="text-white uppercase font-light text-sm hover:text-orange-400">
               Home
