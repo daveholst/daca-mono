@@ -2,7 +2,9 @@
   "name": "daca-mono",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "website:dev": "pnpm exec nx run website:serve --configuration=development"
+  },
   "private": true,
   "devDependencies": {
     "@nrwl/cli": "15.0.4",
