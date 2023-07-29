@@ -8,6 +8,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to website!</title>
         {/* Stolen from the daca site to get the fonts */}
+        {/* TODO fix these fonts, probably this: https://medium.com/codex/next-js-13-google-fonts-5e0e50e031c6 */}
         <link
           rel="stylesheet"
           id="parallax-google-fonts-css"

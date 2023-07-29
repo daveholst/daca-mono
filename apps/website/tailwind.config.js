@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['apps/website/pages/**/*.{js,ts,tsx}'],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     fontFamily: {
-      sans3: ['Montserrat', 'Arial'],
-      sans2: ['Bungee', 'Arial'],
-      sans: ['Quicksand', 'Arial'],
+      sans3: ['var(--font-montserrat)', 'Arial'],
+      sans2: ['var(--font-bungee)', 'Arial'],
+      sans: ['var(--font-quicksand)', 'Arial'],
     },
     extend: {},
   },

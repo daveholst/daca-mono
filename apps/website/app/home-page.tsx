@@ -1,14 +1,19 @@
+'use client';
+
 import Image from 'next/image';
 
-export function Index() {
+// This is a Client Component. It receives data as props and
+// has access to state and effects just like Page components
+// in the `pages` directory.
+export default function HomePage() {
   return (
     <>
       {/* Navigation Bar */}
       <div className="top-0 sticky w-full bg-black ">
         <nav className="md:container flex justify-between mx-auto">
           <Image
-            width="165px"
-            height="48"
+            width={165}
+            height={48}
             className="my-2"
             src="/dacaLogo.png"
             alt=""
@@ -49,5 +54,3 @@ export function Index() {
     </>
   );
 }
-
-export default Index;
